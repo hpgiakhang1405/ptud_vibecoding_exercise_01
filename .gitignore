@@ -1,0 +1,84 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temp files
+*.log
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.tmp
+*.temp
+*.cache
+*.swp
+*.bak
+*_old.*
+*_backup.*
+*_copy.*
+
+# Editor directories
+.vscode/
+.idea/
+*.iml
+.project
+
+# Environment variables
+.env
+.env.*
+.env.local
+!.env.example
+
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.eggs/
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+venv/
+.venv/
+env/
+ENV/
+
+# JavaScript / Node.js
+node_modules/
+.pnp*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+coverage/
+.nyc_output/
+test-results/
+.next/
+out/
+build/
+dist/
+.vercel/
+*.tsbuildinfo
+
+# Credentials / Secrets
+*.pem
+*.key
+*.cert
+credentials.json
+serviceAccountKey.json
+
+# Personal junk
+TODO.txt
+NOTES.txt
+scratch.*
+test123.*
+
+# Project specific
+backend/*.db
+backend/*.sqlite3
+backend/alembic.ini
