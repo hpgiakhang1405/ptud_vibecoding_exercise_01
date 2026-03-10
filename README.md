@@ -131,9 +131,21 @@ npm run dev
 
 ---
 
-## 🧪 Testing
+## 🤖 Development Process
 
-There is currently no automated test suite implemented for this MVP. Standard testing practices (like `pytest` for the backend and `jest` / `vitest` for the frontend) will be added in future iterations.
+As required by the course instructor, this project was built using an **AI agentic coding** (vibecoding) workflow. The agent used is **Antigravity** — an Advanced Agentic Code Generator — which assisted in generating, refining, and iterating on the codebase interactively.
+
+The development process followed these steps:
+
+- **Project scaffolding** — Antigravity was prompted to scaffold the full-stack project structure, separating the FastAPI backend and Next.js frontend into their respective directories.
+- **Backend development** — The agent generated the SQLAlchemy models, Pydantic schemas, and FastAPI route handlers for all CRUD operations on student records.
+- **Database setup** — SQLite was configured as the database engine via SQLAlchemy; the agent also generated a mock data script (`scripts/generate_data.py`) for development purposes.
+- **Frontend development** — The agent built the React/Next.js UI components using Tailwind CSS and TypeScript, including pages for listing, creating, editing, and deleting student records.
+- **API integration** — The frontend was wired up to consume the backend REST API using environment-variable-driven base URLs for flexibility across environments.
+- **Environment configuration** — `.env.example` templates were generated for both frontend and backend to standardize local setup.
+- **Iterative refinement** — Throughout the process, the agent was given follow-up prompts to fix bugs, improve UI layout, and align the codebase with project requirements.
+
+> 🔗 **Repository:** [https://github.com/hpgiakhang1405/ptud_vibecoding_exercise_01](https://github.com/hpgiakhang1405/ptud_vibecoding_exercise_01)
 
 ---
 
